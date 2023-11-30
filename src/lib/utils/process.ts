@@ -25,22 +25,22 @@ export async function handleSignIn() {
     let userData = await getUserData(currentUser.userID);
 
     if (!userData) {
-      // This block only executes for new users (i.e. no public.users record exists)
-      const referralID = localStorage.getItem("referral-code");
-      if (!referralID) {
-        // New user attempting to sign in without a referral code
-        throw "Referral required";
-      }
+      // // This block only executes for new users (i.e. no public.users record exists)
+      // const referralID = localStorage.getItem("referral-code");
+      // if (!referralID) {
+      //   // New user attempting to sign in without a referral code
+      //   throw "Referral required";
+      // }
 
-      const referral = await getReferralDetails(referralID);
-      if (referral.status !== "unclaimed") {
-        throw `This referral is ${referral.status}`;
-      }
+      // const referral = await getReferralDetails(referralID);
+      // if (referral.status !== "unclaimed") {
+      //   throw `This referral is ${referral.status}`;
+      // }
 
-      const claimResult = await claimReferral(referralID, currentUser.userID);
-      if (claimResult.status !== "success") {
-        throw "Failed to claim referral";
-      }
+      // const claimResult = await claimReferral(referralID, currentUser.userID);
+      // if (claimResult.status !== "success") {
+      //   throw "Failed to claim referral";
+      // }
 
       const twitterImageUrl = currentUser.twitterAvatarURL;
       let higherResImageUrl = twitterImageUrl.replace("_normal", "_400x400");
