@@ -49,3 +49,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## ideas
 
 - [ ] in the signup progress the user has to provide information to themselves based on which a model is finetuned with. user can than click the chat with me button which is opening a chat window which is a model which is fine tuned on the user and both persons are added to the chat
+
+## notes 
+
+table structure

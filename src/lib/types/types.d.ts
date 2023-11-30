@@ -1,7 +1,11 @@
 type User = {
-  id: number;
+  id: string;
+  twitter_id: string;
   name: string;
   username: string;
+  profile_image_url: string;
+  created_at: Date;
+  updated_at: Date;
 };
 
 declare module "*.svg" {
