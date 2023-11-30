@@ -36,6 +36,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## plan
 
 - [ ] remove the form (everyone gets accepted)
+    - [ ] make signup via twitter
 - [ ] make sure login is only possible via twitter account registration
 - [ ] people only can see the page with all the people for dating if they provided their dating information
 - [ ] only have filters for gender and location

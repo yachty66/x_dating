@@ -103,14 +103,9 @@ const HomePageComponent: NextPage<HomePageComponentProps> = ({
           {referralDetails?.status === "invalid" && (
             <p>Invalid referral code</p>
           )}
-          <Link
-            href="https://airtable.com/shrBmKG0e4fxr8hAp"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.applyWrapper}
-          >
-            <div className={styles.apply}>Apply</div>
-          </Link>
+          <div className={styles.applyWrapper} onClick={signInWithTwitter}>
+            <div className={styles.apply}>Sign Up</div>
+          </div>
           <Link
             href=""
             className={styles.signInSmall}
